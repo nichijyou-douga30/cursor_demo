@@ -47,7 +47,7 @@ class TodoApp:
 
         tk.Label(
             header,
-            text="やることを追加して、終わったら削除できます。",
+            text="todoを追加して、終わったら削除できます。",
             font=("Yu Gothic UI", 10),
             fg=MUTED,
             bg=BG,
