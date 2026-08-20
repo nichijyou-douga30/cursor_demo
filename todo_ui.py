@@ -21,9 +21,9 @@ DONE = "#8a8a8a"
 
 
 class TodoApp:
-    def __init__(self, root: tk.Tk) -> None:
+    def __init__(self, root: tk.Tk, manager: TodoManager | None = None) -> None:
         self.root = root
-        self.manager = TodoManager()
+        self.manager = manager or TodoManager()
 
         self.root.title("TODO 管理")
         self.root.geometry("480x620")
